@@ -1,12 +1,12 @@
 # Privacy Policy — BubbleGames
 
-**Last updated:** August 18, 2026
+**Last updated:** September 25, 2026
 
 RealLifeCorp ("we", "us", "our") develops and publishes the mobile game **BubbleGames** (the "App"). This Privacy Policy explains what information the App handles, how it is used, and the choices available to you.
 
 BubbleGames is designed to be privacy-respecting: it has no advertising, no analytics or tracking SDKs, and no user accounts. We operate no server of our own, and no information about you is sent to us.
 
-If you have any questions about this policy, contact us at **reallifecorp@gmail.com**.
+If you have any questions about this policy, contact us at **reallifecorpo@gmail.com**.
 
 ---
 
@@ -15,7 +15,7 @@ If you have any questions about this policy, contact us at **reallifecorp@gmail.
 - We do **not** show advertising.
 - We do **not** use analytics or tracking SDKs.
 - We do **not** operate user accounts, and we run no server that receives your data.
-- BubbleGames is played on several phones placed side by side. To do that, your device shares a small amount of information with the other phones **over your local Wi-Fi network only**: your username, your screen's physical measurements, and a random identifier for your device. This is peer-to-peer on the local network. It does not travel over the internet and it does not reach us.
+- BubbleGames is played on several phones placed side by side. To do that, your device shares a small amount of information with the other phones **over your local Wi-Fi network only**: your username, your chosen player colour, your screen's physical measurements, and a random identifier for your device. This is peer-to-peer on the local network. It does not travel over the internet and it does not reach us.
 - While you are hosting a game, your device also **announces the game name to your whole local network** once a second so that nearby phones can find it. Any device on the same Wi-Fi can see that announcement.
 - The App can use your **camera** to scan the QR code on a host's screen. This is optional, the image is processed on your device, and nothing from the camera is stored or transmitted.
 - Purchases are processed by the app store (Google Play / Apple) and managed through **RevenueCat**, which assigns your installation an anonymous, randomly generated identifier. We never receive or store your payment details.
@@ -33,6 +33,7 @@ The following is kept on your device using local storage (shared preferences). *
 - **Screen measurements** — the width, height and bezel thickness of your screen in millimetres. A technical value the game needs in order to lay several phones out as one continuous board.
 - **Device identifier** — a random number generated on your device the first time you open the App. It contains nothing about you or your phone: its only job is to let a host give you back your seat and your score if your phone disconnects mid-game.
 - **Age category** — a single word, either `child` or `adult`. See "Children's Privacy" for how it is worked out, and for what is deliberately *not* kept.
+- **Preferred player colour** — the colour you last picked in a game, so it can be offered to you again next time.
 - **A notice preference** — whether you have already answered a one-off reminder about the iPhone "Bringing Devices Together" (NameDrop) setting.
 
 Please see "Data Retention" below regarding automatic device backups, which may copy this information off your device.
@@ -42,6 +43,7 @@ Please see "Data Retention" below regarding automatic device backups, which may 
 When you join or host a local multiplayer session, your device exchanges the following with the other phones in that session, directly over your local Wi-Fi network:
 
 - **Username** — so other players can see who you are in the standings.
+- **Preferred player colour** — so the host can seat you in the colour you usually play, if nobody else has it.
 - **Screen measurements** — so the game knows the true physical size of each screen and can line the phones up as one board.
 - **Device identifier** — so you can return to your own seat after a disconnection.
 - **Your device's local network address and port** — unavoidable for any device-to-device connection.
@@ -53,6 +55,7 @@ This communication is peer-to-peer on the local network. It does **not** pass th
 While your device is hosting a game, it broadcasts a small message to your local network about once a second so that other phones can list your game on their join screen. That message contains:
 
 - **The game name.** By default this is derived from your username — for example, `SpicyYak's board` — so your username may appear in it.
+- A random identifier for this game session, generated when you start hosting and discarded when the session ends.
 - The number of players, and whether the game is still open to join.
 - Your device's local network address and port.
 - Short, one-way codes derived from the device identifiers of players whose seats are currently free, so that a disconnected player's phone can recognise its own seat. These codes cannot be turned back into a device identifier.
@@ -63,7 +66,7 @@ While your device is hosting a game, it broadcasts a small message to your local
 
 The App can use your device's camera to scan the QR code displayed on a host's screen, as one way of joining a game. The camera preview is processed on your device in order to read the code, and **no image, photo or video is stored, saved, or transmitted anywhere**.
 
-The camera is optional. You can also join by picking a game from the list your device finds automatically, or by typing the host's address by hand, and the App will not ask for camera access unless you choose to scan.
+The camera is optional. You can also join by picking a game from the list your device finds automatically, and the App will not ask for camera access unless you choose to scan.
 
 ### Purchase information
 
@@ -98,7 +101,7 @@ We do **not** use your information for advertising, profiling, analytics, or any
 
 We do not sell your information and we do not share it for advertising. Information is only shared in these limited ways:
 
-- **With other phones on your local network:** your username, screen measurements and device identifier during a session; and, while hosting, the game name broadcast to the local network as described above.
+- **With other phones on your local network:** your username, player colour, screen measurements and device identifier during a session; and, while hosting, the game name broadcast to the local network as described above.
 - **With the app store and RevenueCat:** purchase-related information and the anonymous installation identifier, solely to process and validate purchases and to determine what you have unlocked.
 
 ---
@@ -118,13 +121,13 @@ BubbleGames is family-friendly and intended for a general audience, which may in
 - As a result, **there is no field anywhere in the App into which a child can type free text**, and no name or other detail a child might write can be stored or leave the device.
 - If a name typed before the App knew the device belonged to a child is already saved on the device, it is replaced with a generated one before it can be used or transmitted.
 
-**What is still shared, and why.** So that this is not overstated: a child's device, like any other, still shares its **screen measurements** and its **random device identifier** with the other phones in a session over the local network, and still contacts RevenueCat at launch with an anonymous installation identifier, as described above. These values are randomly generated or purely technical and say nothing about who is holding the phone, but they are persistent identifiers, and we would rather name them here than claim that nothing at all is transmitted.
+**What is still shared, and why.** So that this is not overstated: a child's device, like any other, still shares its **player colour**, its **screen measurements** and its **random device identifier** with the other phones in a session over the local network, and still contacts RevenueCat at launch with an anonymous installation identifier, as described above. These values are randomly generated or purely technical and say nothing about who is holding the phone, but they are persistent identifiers, and we would rather name them here than claim that nothing at all is transmitted.
 
 We do not knowingly collect personal information from children. The App has no accounts, no analytics, no advertising, and no free-text entry available to a child, and we do not build a profile of any user.
 
 In-app purchases are subject to the parental authentication controls provided by the app store.
 
-If you are a parent or guardian and you believe a child has provided personal information in a way not described here, please contact us at **reallifecorp@gmail.com** and we will address it.
+If you are a parent or guardian and you believe a child has provided personal information in a way not described here, please contact us at **reallifecorpo@gmail.com** and we will address it.
 
 ---
 
@@ -144,7 +147,7 @@ Purchase records are retained by the app store and by RevenueCat according to th
 
 - You can **uninstall the App** at any time to remove locally stored information from your device.
 - You can **turn off automatic backups**, or delete an existing backup, using the settings above, if you do not want the App's locally stored information copied to your Google or Apple account.
-- You can **decline camera access** and still join games from the automatic list, or by typing a host's address.
+- You can **decline camera access** and still join games from the list your device finds automatically.
 - You can **change your username** at any time, unless it is generated as described under "Children's Privacy".
 - You can manage or request deletion of purchase-related data by contacting the app store or RevenueCat, or by writing to us at the address below.
 
@@ -159,4 +162,4 @@ We may update this Privacy Policy from time to time. When we do, we will revise 
 ## Contact
 
 RealLifeCorp
-Email: **reallifecorp@gmail.com**
+Email: **reallifecorpo@gmail.com**
