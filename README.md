@@ -1,0 +1,2 @@
+# BubbleGamesPrivacy
+Legacy pivacy
